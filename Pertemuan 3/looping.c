@@ -26,11 +26,6 @@ int main()
     // for (int i = 1; i <= n; i++)
     // {
 
-    //     if (i % 2 == 0)
-    //     {
-    //         continue;
-    //     }
-
     //     printf("%d\n", i);
     // }
 
@@ -38,29 +33,11 @@ int main()
     // // menampilkan angka dari 0 sampai 100
 
     // dengan while
-
-    while (i < n)
-    {
-        while (j < n)
-        {
-            printf("%d\n", i);
-            j++;
-        }
-        i++;
-    }
+   
 
     // dengan do while
 
     // dengan for loop
-    printf("dengan for loop\n");
-    for (i = 0; i < n; i++)
-    {
-        for (j = 0; j < n; j++)
-        {
-            printf("%d", j);
-        }
-        printf("\n");
-    }
-
+    
     return 0;
 }
