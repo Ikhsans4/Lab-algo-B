@@ -6,11 +6,14 @@ int tambah(int a, int b)
     int hasil = a + b;
     return hasil;
 }
-int tambahptr(int *a, int *b)
+void tambahptr(int array[])
 {
     // *a = 3, *b = 5;
-    int hasil = *a + *b;
-    return hasil;
+    // int hasil = *a + *b;
+    int temp = array[0];
+    array[0] = array[1];
+    array[1] = temp;
+    // return hasil;
 }
 
 // void print(int a, int b, int hasil)
@@ -27,14 +30,18 @@ int main()
 {
     int a = 5, b = 2;
     int c = tambah(a, b);
+    int array[] = {2, 3, 4};
     // dengan pointer
-    int cptr = tambahptr(&a, &b);
+    // int cptr = tambahptr(array);
+    printf("sebelum perubahan : %d", array[0]);
+    tambahptr(array);
+
     // print(5, 2, c);
     // printTambah(a,b);
 
-    printf("tanpa ptr %d\n", c);
+    printf("tanpa ptr %d\n", array[0]);
     // print cptr
-    printf("dgn ptr %d", cptr);
+    // printf("dgn ptr %d", cptr);
 
     return 0;
 }
