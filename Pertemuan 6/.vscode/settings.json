@@ -1,0 +1,7 @@
+{
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.iconTheme": "vscode-icons",
+    "files.associations": {
+        "string.h": "c"
+    },
+}
